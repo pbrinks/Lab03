@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.plb7.lab03.MainActivity">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,10 +25,34 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/passwordField"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView"
         android:layout_marginLeft="41dp"
         android:layout_marginStart="41dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/protectedLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="388dp"
+            android:id="@+id/nougat"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Incorrect Password"
+            android:id="@+id/invalidtext"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+    </FrameLayout>
 </RelativeLayout>
